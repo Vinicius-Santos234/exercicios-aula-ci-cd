@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 480px;
+    max-width: 520px;
 }
 
 .card {
@@ -218,3 +218,122 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.installments-section {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.installments-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.installments-subtitle {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.installments-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+@media (max-width: 480px) {
+    .installments-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.installment-box {
+    background-color: #fafbfc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.installment-box:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.installment-box-header {
+    text-align: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.badge-loop {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 3px 10px;
+    border-radius: 9999px;
+}
+
+.badge-for {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.badge-while {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+}
+
+.installment-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.installment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.88rem;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+.installment-row:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.installment-qty {
+    font-weight: 600;
+    color: #475569;
+}
+
+.installment-val {
+    font-weight: 700;
+    color: #059669;
+}
+
+.installment-row.selected-installment {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    font-weight: 600;
+}
+
+.installment-row.selected-installment .installment-qty {
+    color: #047857;
+}
+
+.installment-row.selected-installment .installment-val {
+    color: #047857;
+}
+
