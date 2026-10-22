@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Park Fácil: calcule o valor do estacionamento de carro ou moto.">
+    <title>Park Fácil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Park Fácil</h1>
+        <form action="calcular.php" method="post">
+            <div class="campo">
+                <label for="horas">Horas:</label>
+                <input type="number" name="horas" id="horas">
+            </div>
+            <fieldset class="campo">
+                <legend>Veículo:</legend>
+                <label class="opcao"><input type="radio" name="veiculo" id="veiculo-carro" required value="0">Carro</label>
+                <label class="opcao"><input type="radio" name="veiculo" id="veiculo-moto" required value="1">Moto</label>
+            </fieldset>
+            <div class="campo">
+                <label class="opcao"><input type="checkbox" name="lavagem" id="lavagem">Lavagem</label>
+            </div>
+            <div class="acoes">
+                <button type="submit" id="btn-calcular">Calcular</button>
+                <input type="reset" id="btn-limpar" value="Limpar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
