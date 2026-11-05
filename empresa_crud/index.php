@@ -11,7 +11,6 @@
     <?php include 'menu.php'; ?>
     <div class="container mt-5">
         <h1>Bem vindo a Empresa</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
     </div>
 </body>
 </html>
